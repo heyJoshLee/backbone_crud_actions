@@ -7,9 +7,12 @@
 </head>
 <body>
   <h1>Welcome</h1>
-  <button id="add">
-    Add new post
-  </button>
+  <form id="add_form">
+    <input type="text" placeholder="Title" id="input-title">
+    <input type="text" placeholder="Author" id="input-author">
+
+    <input type="submit" value="New">
+  </form>
   <ul id="posts">
     
   </ul>
@@ -34,6 +37,10 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
   <script src="bower_components/backbone/backbone-min.js"></script>
-  <script src="app.js"></script>
+  <script src="javascripts/models/post.js"></script>
+  <script src="javascripts/collections/posts.js"></script>
+  <script src="javascripts/views/post.js"></script>
+  <script src="javascripts/views/posts.js"></script>
+  <script src="javascripts/app.js"></script>
 </body>
 </html>
