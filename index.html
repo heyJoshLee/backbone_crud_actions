@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Another todo</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Welcome</h1>
+  <button id="add">
+    Add new post
+  </button>
+  <ul id="posts">
+    
+  </ul>
+
+
+  <script id="edit_template" type="text/underscore-template">
+    <input type="text" value="<%= title %>" id="edit-title"> 
+    <input type="text" value="<%= author %>" id="edit-author"> 
+    <a class="confirm"> Confirm </a>
+    <a class="edit"> EDIT </a>
+  </script>
+  
+
+  <script id="post_template" type="text/underscore-template">
+    Title: <%= title %>
+    Author: <%= author %>
+    <a class="delete"> DELETE </a>
+    <a class="edit"> EDIT </a>
+  </script>
+  
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/backbone/backbone-min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
